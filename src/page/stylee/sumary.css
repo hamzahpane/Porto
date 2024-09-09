@@ -1,0 +1,91 @@
+/* src/Component/stylee/About.css */
+
+.ContainerSumary {
+    display: flex; /* Menggunakan flexbox untuk layout */
+    justify-content: center; /* Memusatkan kotak secara horizontal */
+    align-items: center; /* Memusatkan kotak secara vertikal */
+    height: 100px; /* Memastikan container mengambil seluruh tinggi viewport */
+    gap: 30px; /* Jarak antara kotak-kotak */
+}
+
+.ContainarBox {
+    width: 320px;
+    height: 400px;
+    background: black;
+    align-items: center; /* Memusatkan item secara horizontal */
+    justify-content: center; /* Memusatkan item secara vertikal */
+}
+
+
+.ContainarBox2 {
+    width: 650px;
+    height: 400px;
+    background: black;
+}
+
+.Text{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    padding: 10px 0px;
+    font-size: 60px;
+}
+.borderbox {
+    margin: 10px 10px;
+    border-radius: 10px;
+    padding: 10px; /* Spasi di dalam border */
+    display: flex; /* Menggunakan flexbox untuk memusatkan gambar */
+    align-items: center; /* Memusatkan gambar secara vertikal */
+    justify-content: center; /* Memusatkan gambar secara horizontal */
+}
+
+.ProfileImage {
+    width: 160px; /* Ukuran gambar */
+    height: auto; /* Mempertahankan rasio aspek gambar */
+}
+
+.TextContent {
+    margin-top: 10px; /* Jarak antara gambar dan teks */
+    text-align: start; /* Memusatkan teks secara horizontal */
+    margin-left: 10px;
+    
+}
+
+.TextContent h1{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.TextContent h2{
+    margin-top: 140px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family:"Roboto", sans-serif;
+    font-size: 14px;
+}
+
+.Buttondonwload{
+    display: flex;
+}
+.Buttondonwload button{
+    margin:0px 0px 0px 0px;
+    border:none;
+    font-family: "Roboto", sans-serif;
+    background: black;
+    font-size: 24px;
+    
+    color: white;
+    
+}
+
+.Name{
+    background: orange;
+    padding: 0px 0px;
+    
+    width: 263px;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-size: 60px;
+}

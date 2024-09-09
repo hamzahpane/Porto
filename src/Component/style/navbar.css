@@ -1,0 +1,96 @@
+/* src/Component/navbar.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+
+.Logo {
+    font-size: 18px;
+    font-weight: 800;
+    padding: 0 15px;
+    background: orange;
+    border-radius: 100px;
+    color: black;
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+    position: fixed; /* Mengatur posisi navbar agar tetap di atas */
+    width: 100%; /* Lebar penuh */
+    background-color: black; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    font-family: "Roboto", sans-serif;
+    padding: 16px 100px; /* Jarak padding di dalam navbar */
+    display: flex; /* Menampilkan anak-anak navbar secara fleksibel */
+    align-items: center; /* Menyusun item secara vertikal di tengah */
+    justify-content: space-between; /* Mengatur jarak antara item navbar */
+}
+
+.navbar ul {
+    list-style: none; /* Menghapus bullet points dari daftar */
+    padding: 0; /* Menghapus padding */
+    margin: 0; /* Menghapus margin */
+    display: flex; /* Menampilkan daftar secara horizontal */
+    gap: 20px; /* Jarak antara item */
+}
+
+.navbar a {
+    color: #e0e0e0; /* Warna link */
+    text-decoration: none; /* Menghapus garis bawah dari link */
+    font-size: 16px; /* Ukuran font */
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    transition: color 0.3s ease; /* Transisi warna */
+}
+
+.navbar a:hover, .navlink.active {
+    color: white; /* Warna saat hover atau link aktif */
+}
+
+#Media{
+    gap: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#Menu-icons {
+    display: none; /* Menyembunyikan ikon menu pada layar besar */
+}
+
+/* Media Queries */
+@media (max-width: 760px) {
+    #Navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;  
+        position: fixed;
+        top: 60px;
+        right: -300px; /* Lebar menu untuk transisi */
+        width: 250px; /* Lebar menu */
+        height: 100vh;
+        background: black;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.6);
+        padding: 20px 10px;
+        transition: right 0.3s ease; /* Transisi untuk efek sliding */
+        font-family: "Roboto", sans-serif;
+    }
+
+    #Navbar.active {
+        right: 0; /* Menampilkan menu saat aktif */
+    }
+
+    #Navbar li {
+        margin-bottom: 20px; /* Jarak antar item pada menu mobile */
+    }
+
+    #Menu-icons {
+        display: block; /* Menampilkan ikon menu pada layar kecil */
+        cursor: pointer; /* Menunjukkan bahwa ikon bisa diklik */
+    }
+    #Media{
+        gap: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}

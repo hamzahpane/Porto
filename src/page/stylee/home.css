@@ -1,0 +1,56 @@
+/* src/Component/stylee/home.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nanum Myeongjo", serif; /* Font untuk seluruh halaman */
+  background-color: black; /* Latar belakang hitam untuk seluruh halaman */
+  color: #e0e0e0; /* Warna teks yang terang */
+}
+
+/* Container untuk header */
+.HeaderContainer {
+  background-color: black; /* Latar belakang hitam untuk header */
+  color: #e0e0e0; /* Warna teks untuk header */
+}
+
+.Containerconten {
+  display: flex; /* Menggunakan flexbox untuk layout */
+  justify-content: center; /* Memusatkan konten secara horizontal */
+  align-items: center; /* Memusatkan konten secara vertikal */
+  min-height: 100vh; /* Mengatur tinggi minimum container */
+}
+
+/* Menyusun isi halaman */
+.main-content {
+  padding: 1rem;
+  text-align: center; /* Mengatur teks agar rata tengah */
+  color: #e0e0e0; /* Warna teks untuk konten utama */
+}
+
+/* Heading dan paragraf */
+h1 {
+  color: #ffffff; /* Warna judul putih */
+  font-size: 3rem; /* Ukuran font untuk judul */
+  margin: 0; /* Menghapus margin default */
+}
+
+p {
+  font-size: 1.2rem; /* Ukuran font untuk paragraf */
+  margin: 0.5rem 0; /* Jarak antar paragraf */
+}
+.Containerwork{
+  height: 80px;
+  background: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2.5rem; /* Ukuran font untuk judul pada layar kecil */
+  }
+
+  p {
+      font-size: 1rem; /* Ukuran font untuk paragraf pada layar kecil */
+  }
+}
